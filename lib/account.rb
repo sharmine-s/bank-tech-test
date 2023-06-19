@@ -4,11 +4,17 @@ class Account
   def initialize
     @balance = 0
     @deposits = []
+    @withdrawals = []
   end
 
-  def add_deposit(deposit)
+  def apply_deposit(deposit)
     @deposits << deposit
     @balance += deposit.amount
+  end
+
+  def apply_withdrawal(withdrawal)
+    @withdrawals << withdrawal
+    @balance -= withdrawal.amount
   end
 
   def balance
