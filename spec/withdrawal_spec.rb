@@ -10,6 +10,6 @@ RSpec.describe('Withdrawal') do
     expect(withdrawal.date).to eq('01/01/2023')
   end
   it('Fails if amount is not an integer') do
-    expect{ Withdrawal.new('hello', '02/02/2023') }.to raise_error('Amount should be an integer')
+    expect { Withdrawal.new('hello', '02/02/2023') }.to raise_error('Amount should be an integer')
   end
 end

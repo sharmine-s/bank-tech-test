@@ -2,7 +2,8 @@
 
 class Withdrawal
   def initialize(amount, date)
-    fail 'Amount should be an integer' unless amount.is_a? Integer
+    raise 'Amount should be an integer' unless amount.is_a? Integer
+
     @amount = amount
     @date = date
   end
