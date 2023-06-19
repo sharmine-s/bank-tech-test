@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-06-19T15:36:29+01:00">2023-06-19T15:36:29+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-06-19T15:39:08+01:00">2023-06-19T15:39:08+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -483,7 +483,7 @@
 
             
 
-            <code class="ruby">  def statement</code>
+            <code class="ruby">  def print_statement</code>
           </li>
         </div>
       
@@ -1390,7 +1390,7 @@
 
             
 
-            <code class="ruby">      expect { client_account.statement }.to output(&quot;date || credit || debit || balance\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
+            <code class="ruby">      expect { client_account.print_statement }.to output(&quot;date || credit || debit || balance\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
           </li>
         </div>
       
@@ -1511,7 +1511,7 @@
 
             
 
-            <code class="ruby">      expect { client_account.statement }.to output(&quot;date || credit || debit || balance\n14/01/2023 || || 500.00 || 2500.00\n13/01/2023 || 2000.00 || || 3000.00\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
+            <code class="ruby">      expect { client_account.print_statement }.to output(&quot;date || credit || debit || balance\n14/01/2023 || || 500.00 || 2500.00\n13/01/2023 || 2000.00 || || 3000.00\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
           </li>
         </div>
       
@@ -2167,7 +2167,7 @@
 
             
 
-            <code class="ruby">      expect { client_account.statement }.to output(&quot;date || credit || debit || balance\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
+            <code class="ruby">      expect { client_account.print_statement }.to output(&quot;date || credit || debit || balance\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
           </li>
         </div>
       
@@ -2288,7 +2288,7 @@
 
             
 
-            <code class="ruby">      expect { client_account.statement }.to output(&quot;date || credit || debit || balance\n14/01/2023 || || 500.00 || 2500.00\n13/01/2023 || 2000.00 || || 3000.00\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
+            <code class="ruby">      expect { client_account.print_statement }.to output(&quot;date || credit || debit || balance\n14/01/2023 || || 500.00 || 2500.00\n13/01/2023 || 2000.00 || || 3000.00\n10/01/2023 || 1000.00 || || 1000.00\n&quot;).to_stdout</code>
           </li>
         </div>
       

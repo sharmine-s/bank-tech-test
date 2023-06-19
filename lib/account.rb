@@ -24,7 +24,7 @@ class Account
     return format('%.2f', @balance)
   end
 
-  def statement
+  def print_statement
     puts 'date || credit || debit || balance'
     @transactions.reverse_each { |transaction| puts transaction }
   end

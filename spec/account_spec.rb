@@ -31,7 +31,7 @@ RSpec.describe('Account unit tests') do
       first_deposit = double(amount: 1000, date: '10/01/2023')
       client_account.apply_deposit(first_deposit)
 
-      expect { client_account.statement }.to output("date || credit || debit || balance\n10/01/2023 || 1000.00 || || 1000.00\n").to_stdout
+      expect { client_account.print_statement }.to output("date || credit || debit || balance\n10/01/2023 || 1000.00 || || 1000.00\n").to_stdout
     end
     it('Prints full statement correctly for full requirements') do
       client_account = Account.new
@@ -42,7 +42,7 @@ RSpec.describe('Account unit tests') do
       first_withdrawal = double(amount: 500, date: '14/01/2023')
       client_account.apply_withdrawal(first_withdrawal)
 
-      expect { client_account.statement }.to output("date || credit || debit || balance\n14/01/2023 || || 500.00 || 2500.00\n13/01/2023 || 2000.00 || || 3000.00\n10/01/2023 || 1000.00 || || 1000.00\n").to_stdout
+      expect { client_account.print_statement }.to output("date || credit || debit || balance\n14/01/2023 || || 500.00 || 2500.00\n13/01/2023 || 2000.00 || || 3000.00\n10/01/2023 || 1000.00 || || 1000.00\n").to_stdout
     end
   end
 end
