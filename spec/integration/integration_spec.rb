@@ -33,7 +33,18 @@ RSpec.describe('Integration tests') do
       first_deposit = Deposit.new(1000, '10/01/2023')
       client_account.apply_deposit(first_deposit)
 
-      expect { client_account.statement }.to output("10/01/2023 || 1000.00 || || 1000.00\n").to_stdout
+      expect { client_account.statement }.to output("date || credit || debit || balance\n10/01/2023 || 1000.00 || || 1000.00\n").to_stdout
+    end
+    it('Prints full statement correctly for full requirements') do
+      client_account = Account.new
+      first_deposit = Deposit.new(1000, '10/01/2023')
+      client_account.apply_deposit(first_deposit)
+      second_deposit = Deposit.new(2000, '13/01/2023')
+      client_account.apply_deposit(second_deposit)
+      first_withdrawal = Withdrawal.new(500, '14/01/2023')
+      client_account.apply_withdrawal(first_withdrawal)
+
+      expect { client_account.statement }.to output("date || credit || debit || balance\n14/01/2023 || || 500.00 || 2500.00\n13/01/2023 || 2000.00 || || 3000.00\n10/01/2023 || 1000.00 || || 1000.00\n").to_stdout
     end
   end
 end

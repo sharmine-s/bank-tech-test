@@ -11,12 +11,13 @@ class Account
   def apply_deposit(deposit)
     @deposits << deposit
     @balance += deposit.amount
-    @transactions << "#{deposit.date} || #{'%.2f' % deposit.amount} || || #{balance}"
+    @transactions << "#{deposit.date} || #{format('%.2f', deposit.amount)} || || #{balance}"
   end
 
   def apply_withdrawal(withdrawal)
     @withdrawals << withdrawal
     @balance -= withdrawal.amount
+    @transactions << "#{withdrawal.date} || || #{format('%.2f', withdrawal.amount)} || #{balance}"
   end
 
   def balance
@@ -24,6 +25,7 @@ class Account
   end
 
   def statement
-    puts @transactions
+    puts 'date || credit || debit || balance'
+    @transactions.reverse_each { |transaction| puts transaction }
   end
 end
