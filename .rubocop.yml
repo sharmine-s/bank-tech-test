@@ -1,0 +1,7 @@
+# .rubocop.yml
+AllCops:
+  Exclude:
+    - spec/spec_helper.rb
+    - Gemfile
+    - Gemfile.lock
+  NewCops: disable
