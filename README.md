@@ -8,7 +8,7 @@ Welcome to my Bank tech test. To install my code and ensure you can run rspec, r
 bundle install
 ```
 
-You can then run `rspec` and notice that all tests are passing, and that my code coverage is 100%. You can also run `rubocop` to see that I have no rubocop offenses. Please note that in the _.rubocop.yml_ file, I have added some exclusions I deemed necessary. This includes not checking the spec files for code length, and avoid running rubocop on the spec_helper and Gemfile documents. I did have an issue with enforcing _apply_deposit_ to use a deposit object and similarly for `apply_withdrawal`, as I couldn't successfully mock the deposit/withdrawal object to pass the `is_a?` fail line in my account unit test.
+You can then run `rspec` and notice that all tests are passing, and that my code coverage is 100%. You can also run `rubocop` to see that I have no rubocop offenses. Please note that in the _.rubocop.yml_ file, I have added some exclusions I deemed necessary. This includes not checking the spec files for code length, and avoid running rubocop on the spec_helper and Gemfile documents. I did have an issue with enforcing `apply_deposit` to use a deposit object and similarly for `apply_withdrawal`, as I couldn't successfully mock the deposit/withdrawal object to pass the `is_a?` fail line in my account unit test.
 
 ## Process
 
