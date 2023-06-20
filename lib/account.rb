@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'transaction'
+
 class Account
   def initialize
     @balance = 0
@@ -7,6 +9,8 @@ class Account
   end
 
   def apply_transaction(transaction)
+    raise 'Must use a Transaction object' unless transaction.is_a? Transaction
+
     @balance += transaction.amount
 
     if transaction.amount > 0

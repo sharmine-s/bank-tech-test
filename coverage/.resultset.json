@@ -58,12 +58,16 @@
           null,
           null,
           1,
+          null,
           1,
-          8,
-          8,
+          1,
+          9,
+          9,
           null,
           null,
           1,
+          15,
+          null,
           14,
           null,
           14,
@@ -80,6 +84,28 @@
           1,
           4,
           12,
+          null,
+          null
+        ]
+      },
+      "/Users/sharmine/Projects/Ruby/bank-tech-test/lib/transaction.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          9,
+          null,
+          8,
+          8,
+          null,
+          null,
+          1,
+          22,
+          null,
+          null,
+          1,
+          8,
           null,
           null
         ]
@@ -117,6 +143,13 @@
           1,
           1,
           1,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
           1,
           1,
           null,
@@ -133,28 +166,6 @@
           null,
           2,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/sharmine/Projects/Ruby/bank-tech-test/lib/transaction.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          9,
-          null,
-          8,
-          8,
-          null,
-          null,
-          1,
-          22,
-          null,
-          null,
-          1,
-          8,
           null,
           null
         ]
@@ -179,6 +190,6 @@
         ]
       }
     },
-    "timestamp": 1687268337
+    "timestamp": 1687269122
   }
 }

@@ -26,6 +26,13 @@ RSpec.describe('Integration tests') do
     end
   end
 
+  context('Fail state') do
+    it('Fails if using apply_transaction without a Transaction object') do
+      client_account = Account.new
+      expect { client_account.apply_transaction('transaction') }.to raise_error('Must use a Transaction object')
+    end
+  end
+
   context('Statement') do
     it('Prints statement correctly when there has been 1 deposit') do
       client_account = Account.new

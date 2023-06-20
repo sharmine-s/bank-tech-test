@@ -17,3 +17,9 @@ Metrics/BlockLength:
 Layout/LineLength:
   Exclude:
     - spec/**/*
+Style/ConditionalAssignment:
+  Exclude:
+    - 'lib/account.rb'
+Style/NumericPredicate:
+  Exclude:
+    - 'lib/account.rb'
