@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'transaction'
+require './lib/transaction'
 
 class Account
   def initialize
